@@ -1,6 +1,6 @@
 const express = require('express');
 const connectDB = require('./db');
-const Item = require('./models/items');
+const Item = require('models/items');
 require('dotenv').config();
 
 const app = express();
@@ -116,4 +116,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
+
 });
